@@ -1,0 +1,64 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0b3d"/>
+      <stop offset="30%" stop-color="#5a1f7a"/>
+      <stop offset="58%" stop-color="#c93b9a"/>
+      <stop offset="80%" stop-color="#ff6ec4"/>
+      <stop offset="100%" stop-color="#ffb37a"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff6b0"/>
+      <stop offset="35%" stop-color="#ffd36e"/>
+      <stop offset="65%" stop-color="#ff9a56"/>
+      <stop offset="100%" stop-color="#ff5f9e"/>
+    </linearGradient>
+    <linearGradient id="grid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#01cdfe" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#01cdfe" stop-opacity=".9"/>
+    </linearGradient>
+    <clipPath id="sunClip">
+      <circle cx="220" cy="150" r="105"/>
+    </clipPath>
+    <pattern id="sunStripes" width="1" height="8" patternUnits="userSpaceOnUse">
+      <rect width="1" height="4" fill="#1a0b3d"/>
+    </pattern>
+    <mask id="floorMask">
+      <linearGradient id="floorFade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#000"/>
+        <stop offset="100%" stop-color="#fff"/>
+      </linearGradient>
+      <rect x="0" y="190" width="1200" height="110" fill="url(#floorFade)"/>
+    </mask>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#sky)"/>
+
+  <!-- retro sun -->
+  <circle cx="220" cy="150" r="105" fill="url(#sun)"/>
+  <g clip-path="url(#sunClip)">
+    <rect x="0" y="150" width="440" height="150" fill="url(#sunStripes)" opacity="0.55"/>
+  </g>
+
+  <!-- perspective grid floor -->
+  <g mask="url(#floorMask)" stroke="#01cdfe" stroke-opacity=".55">
+    <line x1="0" y1="300" x2="600" y2="190"/>
+    <line x1="120" y1="300" x2="640" y2="190"/>
+    <line x1="260" y1="300" x2="680" y2="190"/>
+    <line x1="420" y1="300" x2="720" y2="190"/>
+    <line x1="600" y1="300" x2="600" y2="190"/>
+    <line x1="800" y1="300" x2="640" y2="190"/>
+    <line x1="1020" y1="300" x2="680" y2="190"/>
+    <line x1="1200" y1="300" x2="720" y2="190"/>
+    <line x1="0" y1="235" x2="1200" y2="235" stroke-opacity=".35"/>
+    <line x1="60" y1="260" x2="1150" y2="260" stroke-opacity=".45"/>
+    <line x1="180" y1="285" x2="1030" y2="285" stroke-opacity=".6"/>
+  </g>
+
+  <!-- name / tagline -->
+  <g font-family="Georgia, 'Times New Roman', serif" font-style="italic">
+    <text x="460" y="150" font-size="58" font-weight="700" fill="#fdf1ff">Jay Johnson<tspan fill="#01cdfe">.</tspan></text>
+    <text x="462" y="188" font-size="21" fill="#f0d9f7" font-style="normal" letter-spacing="1">Full-Stack Engineer &amp; Systems Integrator</text>
+    <text x="462" y="216" font-size="15" fill="#e2b6ea" font-style="normal" letter-spacing="3">JSONJ.NET/ABOUT &#183; REMOTE-ONLY</text>
+  </g>
+</svg>
