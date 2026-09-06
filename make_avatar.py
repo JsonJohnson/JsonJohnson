@@ -44,7 +44,7 @@ TPL = '''<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w
   </g>
   <rect width="{W}" height="{H}" fill="url(#vig)"/>
 
-  <text x="232" y="332" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',Inter,system-ui,-apple-system,sans-serif" font-weight="700" font-size="272" letter-spacing="-14" fill="#f7f3ff" filter="url(#glow)">JJ<tspan fill="#ff2fd0" dx="-40">.</tspan></text>
+  <text x="272" y="327" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',Inter,system-ui,-apple-system,sans-serif" font-weight="700" font-size="288" letter-spacing="-16" fill="#f7f3ff" filter="url(#glow)">JJ</text>
 </svg>
 '''
 
