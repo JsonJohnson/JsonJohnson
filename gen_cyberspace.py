@@ -203,7 +203,8 @@ def box_wireframe(scene, cx, cy, cz, sx, sy, sz, color, opacity, width=1.15):
 def build_scene(camera, seed, tower_density=0.55, particles=900, grid_step=2.0,
                 grid_stroke=1.0, tower_stroke=1.15, particle_size=0.011,
                 min_tower_height=2.0, tower_height_range=11.0,
-                floor_sub="#5c1a4d", ceil_sub="#134c5c", tower_lightness=0.55):
+                floor_sub="#5c1a4d", ceil_sub="#134c5c", tower_lightness=0.55,
+                tower_opacity=0.85):
     rng = random.Random(seed)
     scene = Scene(camera)
 
@@ -227,7 +228,7 @@ def build_scene(camera, seed, tower_density=0.55, particles=900, grid_step=2.0,
             fz = gz + (rng.random() - 0.5) * 1.4
             w = 0.9 + rng.random() * 0.6
             d = 0.9 + rng.random() * 0.6
-            box_wireframe(scene, fx, h / 2, fz, w, h, d, color, 0.9, tower_stroke)
+            box_wireframe(scene, fx, h / 2, fz, w, h, d, color, tower_opacity, tower_stroke)
             gz += spacing
         gx += spacing
 
