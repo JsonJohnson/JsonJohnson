@@ -1,2 +1,6 @@
 __pycache__/
 *.pyc
+
+# session-claim (CLAUDE.md section 14)
+SESSION-CLAIM.md
+!HANDOFF-INBOX.md
