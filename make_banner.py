@@ -38,7 +38,7 @@ TPL = '''<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w
   <rect width="660" height="{H}" fill="url(#plate)"/>
 
   <g font-family="'Space Grotesk','Segoe UI',Inter,system-ui,-apple-system,sans-serif">
-    <text x="64" y="132" font-size="62" font-weight="700" fill="#f5f0ff" filter="url(#glow)" letter-spacing="-1">Jay Johnson<tspan fill="#ff2fd0">.</tspan></text>
+    <text x="64" y="132" font-size="62" font-weight="700" fill="#f5f0ff" filter="url(#glow)" letter-spacing="-1">Jay Johnson</text>
     <text x="66" y="172" font-size="21" font-weight="500" fill="#d8ccf0" letter-spacing=".6">Full-Stack Engineer &amp; Systems Integrator</text>
   </g>
   <g font-family="'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
