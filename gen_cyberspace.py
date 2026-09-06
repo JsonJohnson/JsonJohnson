@@ -172,15 +172,15 @@ class Scene:
         return "\n".join(out)
 
 
-def grid(scene, y, color_main, color_sub, half=44, step=2.0, center_every=10):
+def grid(scene, y, color_main, color_sub, half=44, step=2.0, center_every=10, stroke=1.0):
     lo = -half
     n = int(half * 2 / step)
     for i in range(n + 1):
         v = lo + i * step
         color = color_main if i % center_every == 0 else color_sub
         opacity = 1.0 if i % center_every == 0 else 0.7
-        scene.line((v, y, -half), (v, y, half), color, opacity, 1.0, segments=18)
-        scene.line((-half, y, v), (half, y, v), color, opacity, 1.0, segments=6)
+        scene.line((v, y, -half), (v, y, half), color, opacity, stroke, segments=18)
+        scene.line((-half, y, v), (half, y, v), color, opacity, stroke, segments=6)
 
 
 def box_wireframe(scene, cx, cy, cz, sx, sy, sz, color, opacity, width=1.15):
@@ -200,12 +200,15 @@ def box_wireframe(scene, cx, cy, cz, sx, sy, sz, color, opacity, width=1.15):
         scene.line(corners[a], corners[b], color, opacity, width)
 
 
-def build_scene(camera, seed, tower_density=0.55, particles=900):
+def build_scene(camera, seed, tower_density=0.55, particles=900, grid_step=2.0,
+                grid_stroke=1.0, tower_stroke=1.15, particle_size=0.011,
+                min_tower_height=2.0, tower_height_range=11.0,
+                floor_sub="#5c1a4d", ceil_sub="#134c5c", tower_lightness=0.55):
     rng = random.Random(seed)
     scene = Scene(camera)
 
-    grid(scene, 0.0, "#ff2fd0", "#5c1a4d")
-    grid(scene, 14.0, "#2fe0ff", "#134c5c")
+    grid(scene, 0.0, "#ff2fd0", floor_sub, step=grid_step, stroke=grid_stroke)
+    grid(scene, 14.0, "#2fe0ff", ceil_sub, step=grid_step, stroke=grid_stroke)
 
     half_span, spacing = 30, 4.2
     gx = -half_span
@@ -218,13 +221,13 @@ def build_scene(camera, seed, tower_density=0.55, particles=900):
             if rng.random() > tower_density:
                 gz += spacing
                 continue
-            h = 2 + rng.random() * 11
-            color = hsl_hex(rng.random(), 1.0, 0.55)
+            h = min_tower_height + rng.random() * tower_height_range
+            color = hsl_hex(rng.random(), 1.0, tower_lightness)
             fx = gx + (rng.random() - 0.5) * 1.4
             fz = gz + (rng.random() - 0.5) * 1.4
             w = 0.9 + rng.random() * 0.6
             d = 0.9 + rng.random() * 0.6
-            box_wireframe(scene, fx, h / 2, fz, w, h, d, color, 0.85)
+            box_wireframe(scene, fx, h / 2, fz, w, h, d, color, 0.9, tower_stroke)
             gz += spacing
         gx += spacing
 
@@ -235,6 +238,6 @@ def build_scene(camera, seed, tower_density=0.55, particles=900):
             (rng.random() - 0.5) * 60,
         )
         color = hsl_hex(rng.random(), 1.0, 0.6)
-        scene.streak(p, 0.35 + rng.random() * 0.65, color, 0.011, 0.8)
+        scene.streak(p, 0.35 + rng.random() * 0.65, color, particle_size, 0.8)
 
     return scene
