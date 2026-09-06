@@ -4,9 +4,9 @@
 
 <br/><br/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-jsonj.net-ff71ce?style=for-the-badge&labelColor=1a0b3d)](https://jsonj.net/about/)
-[![Resume](https://img.shields.io/badge/Resume-PDF-01cdfe?style=for-the-badge&labelColor=1a0b3d)](https://jsonj.net/Jay_Johnson_Resume.pdf)
-[![Email](https://img.shields.io/badge/Email-jay%40jsonj.net-e2b6ea?style=for-the-badge&labelColor=1a0b3d)](mailto:jay@jsonj.net)
+[![Portfolio](https://img.shields.io/badge/Portfolio-jsonj.net-ff2fd0?style=for-the-badge&labelColor=12081f)](https://jsonj.net/about/)
+[![Resume](https://img.shields.io/badge/Resume-PDF-2fe0ff?style=for-the-badge&labelColor=12081f)](https://jsonj.net/Jay_Johnson_Resume.pdf)
+[![Email](https://img.shields.io/badge/Email-jay%40jsonj.net-d8ccf0?style=for-the-badge&labelColor=12081f)](mailto:jay@jsonj.net)
 
 </div>
 
@@ -24,15 +24,15 @@ Remote-only · U.S. citizen, no sponsorship required · full-time or contract
 
 <div align="center">
 
-![C#](https://img.shields.io/badge/C%23-1a0b3d?style=flat-square&logo=csharp&logoColor=ff71ce)
-![.NET](https://img.shields.io/badge/.NET_6%2F7%2F8-1a0b3d?style=flat-square&logo=dotnet&logoColor=01cdfe)
-![Python](https://img.shields.io/badge/Python-1a0b3d?style=flat-square&logo=python&logoColor=ff71ce)
-![SQL Server](https://img.shields.io/badge/SQL_Server-1a0b3d?style=flat-square&logo=microsoftsqlserver&logoColor=01cdfe)
-![Snowflake](https://img.shields.io/badge/Snowflake-1a0b3d?style=flat-square&logo=snowflake&logoColor=ff71ce)
-![Docker](https://img.shields.io/badge/Docker-1a0b3d?style=flat-square&logo=docker&logoColor=01cdfe)
-![Power BI](https://img.shields.io/badge/Power_BI-1a0b3d?style=flat-square&logo=powerbi&logoColor=ff71ce)
-![Salesforce](https://img.shields.io/badge/Salesforce-1a0b3d?style=flat-square&logo=salesforce&logoColor=01cdfe)
-![Claude](https://img.shields.io/badge/Claude_Agent_SDK-1a0b3d?style=flat-square&logo=anthropic&logoColor=ff71ce)
+![C#](https://img.shields.io/badge/C%23-12081f?style=flat-square&logo=csharp&logoColor=ff3333)
+![.NET](https://img.shields.io/badge/.NET_6%2F7%2F8-12081f?style=flat-square&logo=dotnet&logoColor=ffbb33)
+![Python](https://img.shields.io/badge/Python-12081f?style=flat-square&logo=python&logoColor=bbff33)
+![SQL Server](https://img.shields.io/badge/SQL_Server-12081f?style=flat-square&logo=microsoftsqlserver&logoColor=33ff33)
+![Snowflake](https://img.shields.io/badge/Snowflake-12081f?style=flat-square&logo=snowflake&logoColor=33ffbb)
+![Docker](https://img.shields.io/badge/Docker-12081f?style=flat-square&logo=docker&logoColor=33bbff)
+![Power BI](https://img.shields.io/badge/Power_BI-12081f?style=flat-square&logo=powerbi&logoColor=6a6aff)
+![Salesforce](https://img.shields.io/badge/Salesforce-12081f?style=flat-square&logo=salesforce&logoColor=bb33ff)
+![Claude](https://img.shields.io/badge/Claude_Agent_SDK-12081f?style=flat-square&logo=anthropic&logoColor=ff33bb)
 
 </div>
 
@@ -55,5 +55,5 @@ schematics, and what each one taught me: **[jsonj.net/about](https://jsonj.net/a
 ---
 
 <div align="center">
-<sub>Central Ohio · <a href="https://jsonj.net">jsonj.net</a></sub>
+<sub>Central Ohio · <a href="https://jsonj.net">jsonj.net</a> · <a href="https://jsonj.net/about/">cyberspace</a> is one of 52 themes on the site — pick another in the header</sub>
 </div>
